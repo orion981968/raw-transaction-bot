@@ -1,0 +1,33 @@
+{
+  "name": "raw-transaction-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "node ./InitAccounts.js",
+    "init-gorgeous": "node ./InitGorgeousAccounts.js --sdv 100",
+    "start": "node ./StartTransactions.js",
+    "start-gorgeous": "node ./StartGorgeousTransactions.js --val 10",
+    "gather": "node ./gather.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zilionixx/raw-transaction-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zilionixx/raw-transaction-bot/issues"
+  },
+  "homepage": "https://github.com/zilionixx/raw-transaction-bot#readme",
+  "dependencies": {
+    "async": "^3.2.3",
+    "dotenv": "^16.0.0",
+    "ethereumjs-common": "^1.5.2",
+    "ethereumjs-tx": "^2.1.2",
+    "web3": "^1.7.3",
+    "yargs": "^17.4.1"
+  }
+}
